@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 28 11:02:03 2018
+# Process ID: 1028
+# Current directory: C:/Users/Oliver/Documents/GitHub/Cronometro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9652 C:\Users\Oliver\Documents\GitHub\Cronometro\Cronometro.xpr
+# Log file: C:/Users/Oliver/Documents/GitHub/Cronometro/vivado.log
+# Journal file: C:/Users/Oliver/Documents/GitHub/Cronometro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Oliver/Documents/GitHub/Cronometro/Cronometro.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:34 . Memory (MB): peak = 721.547 ; gain = 49.445
+add_files -fileset constrs_1 -norecurse C:/Users/Oliver/Documents/GitHub/Cronometro/Nexys4DDR_Master.xdc
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 28 11:25:12 2018...
