@@ -37,6 +37,8 @@ end counter_tb;
 
 architecture behavior of counter_tb is
 
+-- Component declaration
+
 component counter
 port(
         clk,reset,modo,enable,load : in std_logic;

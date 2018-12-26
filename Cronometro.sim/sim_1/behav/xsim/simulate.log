@@ -1,2 +1,6 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
+Note: Salida incorrecta.
+Time: 280 ns  Iteration: 0  Process: /decoder_dec_tb/stim_proc  File: C:/Users/Oliver/Documents/GitHub/Cronometro/Cronometro.srcs/sim_1/new/decoder_dec_tb.vhd
+Note: Simulación finalizada. Test superado.
+Time: 420 ns  Iteration: 0  Process: /decoder_dec_tb/stim_proc  File: C:/Users/Oliver/Documents/GitHub/Cronometro/Cronometro.srcs/sim_1/new/decoder_dec_tb.vhd
