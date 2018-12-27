@@ -1,6 +1,6 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 46b5feb112264539bcd058e79275b368 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot display_refresh_tb_behav xil_defaultlib.display_refresh_tb -log elaborate.log 
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 46b5feb112264539bcd058e79275b368 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot synchronizer_tb_behav xil_defaultlib.synchronizer_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,6 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.display_refresh [display_refresh_default]
-Compiling architecture behavioral of entity xil_defaultlib.display_refresh_tb
-Built simulation snapshot display_refresh_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.synchronizer [synchronizer_default]
+Compiling architecture behavioral of entity xil_defaultlib.synchronizer_tb
+Built simulation snapshot synchronizer_tb_behav
