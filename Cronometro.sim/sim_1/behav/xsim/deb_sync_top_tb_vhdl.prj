@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Cronometro.srcs/sources_1/new/deb_sync_top.vhd" \
+"../../../../Cronometro.srcs/sources_1/new/debouncer.vhd" \
+"../../../../Cronometro.srcs/sources_1/new/synchronizer.vhd" \
+"../../../../Cronometro.srcs/sim_1/new/deb_sync_top_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Oliver/Documents/GitHub/Cronometro/Cronometro.srcs/sim_1/new/synchronizer_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity synchronizer_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Oliver/Documents/GitHub/Cronometro/Cronometro.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_tb

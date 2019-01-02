@@ -32,8 +32,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity decoder_dec is
-    port(code : in std_logic_vector(3 downto 0);
-            led : out std_logic_vector(6 downto 0));
+    port(
+            code : in std_logic_vector(3 downto 0);
+            led : out std_logic_vector(6 downto 0)
+            );
 end decoder_dec;
 
 architecture Behavioral of decoder_dec is

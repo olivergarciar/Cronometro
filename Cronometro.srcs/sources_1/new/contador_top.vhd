@@ -41,14 +41,13 @@ end contador_top;
 
 architecture Behavioral of contador_top is
 
---signal cuentaDec:std_logic_vector(3 downto 0);
 signal salidaDec:std_logic;
---signal cuentaSegUni:std_logic_vector(3 downto 0);
 signal salidaSegUni:std_logic;
---signal cuentaSegDec:std_logic_vector(3 downto 0);
 signal salidaSegDec:std_logic;
---signal cuentaMin:std_logic_vector(3 downto 0);
 signal salidaMin:std_logic;
+
+--Enclavamiento del enable
+signal enableSignal : std_logic := '0';
 
 component counter 
     generic (max:integer := 10);
@@ -62,11 +61,19 @@ end component;
 
 begin
 
+process(enable)
+begin
+    if(enable'event and enable='1') then
+        enableSignal <= not enableSignal;
+    end if;
+end process;
+    
+
 contador_Dec : counter generic map (max=>10) port map(
     clk => clk,
     reset => reset,
     modo => modo,
-    enable => enable,
+    enable => enableSignal,
     load => '0',
     l => "0000",
     q => dec,
@@ -77,7 +84,7 @@ contador_SegUni : counter generic map (max=>10) port map(
     clk => salidaDec,
     reset => reset,
     modo => modo,
-    enable => enable,
+    enable => enableSignal,
     load => '0',
     l => "0000",
     q => segUni,
@@ -88,7 +95,7 @@ contador_SegDec : counter generic map (max=>6) port map(
     clk => salidaSegUni,
     reset => reset,
     modo => modo,
-    enable => enable,
+    enable => enableSignal,
     load => load,
     l => ls,
     q => segDec,
@@ -99,7 +106,7 @@ contador_Min : counter generic map (max=>10) port map(
     clk => salidaSegDec,
     reset => reset,
     modo => modo,
-    enable => enable,
+    enable => enableSignal,
     load => load,
     l => lm,
     q => min,

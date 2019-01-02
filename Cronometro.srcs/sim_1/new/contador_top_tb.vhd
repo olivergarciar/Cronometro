@@ -32,7 +32,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity contador_top_tb is
---  Port ( );
 end contador_top_tb;
 
 architecture Behavioral of contador_top_tb is
@@ -88,25 +87,31 @@ component contador_top
      stim_proc : process
      begin
          --hold reset state 
-         wait for 1000 ms;
+         wait for 100 ms;
          
          --insert stimulus here
                      reset <= '1';
                      enable <= '1';
-                     wait for 200 ms;
+                     wait for 30 ms;
                      
                      reset <= '0';
                      wait for 1200 ms;
                      
                      enable <= '0';
-                     wait for 200 ms;
+                     wait for 20 ms;
                      
                      ls <= "1000";
                      enable <= '1';
-                     wait for 200 ms;
+                     wait for 100 ms;
                      
                      load <= '1';
                      wait for 100 ms;
+                     
+                     enable <= '0';
+                     wait for 20 ms;
+                     
+                     enable <= '1';
+                     wait for 25 ms;
                      
                      load <='0';
                      wait for 100 ms;
