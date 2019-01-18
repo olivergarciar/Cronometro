@@ -72,11 +72,11 @@ begin
                             cuenta<=cuenta - 1;
                             s<='0';
                             if cuenta="0000" then
-                                cuenta<="1001";
+                                cuenta<=to_unsigned(max-1,cuenta'length);
                                 s<='1';
                             end if;
                         else
-                            cuenta<="1001";
+                            cuenta<=to_unsigned(max-1,cuenta'length);
                             s<='0';
                         end if;
                     end if;
